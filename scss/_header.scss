@@ -76,6 +76,8 @@
     &.navbar-first{
         background: rgba($primary-clr, 0.2);
         color: $secondary-clr;
+        padding:15px 0;
+        @include easeOut(0.5s);
 
         .nav-item{
             margin: 0 20px;
@@ -97,6 +99,8 @@
     &.navbar-scroll{
         background: white;
         color: $primary-clr;
+
+        @include easeOut(0.5s);
         
 
         .nav-item{

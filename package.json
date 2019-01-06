@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "theme for mnazibay consultant",
   "main": "index.js",
-  "homepage": "https://mhassan4392.github.io/mnazibay",
+  "homepage": "https://mhassan4392.github.io/mnazibay-consulting",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"

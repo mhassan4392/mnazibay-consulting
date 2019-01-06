@@ -36,10 +36,10 @@
             a{
                 color: white;
                 font-size: 1.1rem;
+                @include easeOut(0.5s);
 
                 &:hover{
                     color: $yellow-clr;
-                    padding-left: 10px;
                     text-decoration: none;
                     @include easeOut(0.5s);
                 }
@@ -84,6 +84,9 @@
 
         .footer-icons{
             text-align: right;
+            .fa{
+                @include easeOut(0.5s);
+            }
             .fa-facebook{
                 color: #3B5998 !important;
                 &:hover{

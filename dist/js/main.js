@@ -6,13 +6,13 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("main-header").classList.add('navbar-scroll');
     document.getElementById("main-header").classList.remove('navbar-first');
-    document.querySelector('.brand-img').setAttribute('src','images/logo.png');
+    document.querySelector('.brand-img').setAttribute('src','images/logo1.png');
     document.getElementById("myBtn").style.display = "block";
     //document.querySelector('.header-address').classList.add('d-none');
   } else {
     document.getElementById("main-header").classList.remove('navbar-scroll');
     document.getElementById("main-header").classList.add('navbar-first');
-    document.querySelector('.brand-img').setAttribute('src','images/logo-transparent-header.png');
+    document.querySelector('.brand-img').setAttribute('src','images/logo-transparent-header1.png');
     document.getElementById("myBtn").style.display = "none";
     //document.querySelector('.header-address').classList.remove('d-none');
   }
