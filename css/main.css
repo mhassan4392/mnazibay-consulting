@@ -87,7 +87,9 @@
       transition: all 0.5s ease-out; }
   #main-header.navbar-first {
     background: rgba(25, 34, 37, 0.2);
-    color: #fff; }
+    color: #fff;
+    padding: 15px 0;
+    transition: all 0.5s ease-out; }
     #main-header.navbar-first .nav-item {
       margin: 0 20px; }
       #main-header.navbar-first .nav-item a {
@@ -99,7 +101,8 @@
           transition: all 0.5s ease-out; }
   #main-header.navbar-scroll {
     background: white;
-    color: #192225; }
+    color: #192225;
+    transition: all 0.5s ease-out; }
     #main-header.navbar-scroll .nav-item {
       margin: 0 20px; }
       #main-header.navbar-scroll .nav-item a {
@@ -655,10 +658,10 @@
     line-height: 2.2rem; }
     #main-footer .footer-list li a {
       color: white;
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      transition: all 0.5s ease-out; }
       #main-footer .footer-list li a:hover {
         color: #fde428;
-        padding-left: 10px;
         text-decoration: none;
         transition: all 0.5s ease-out; }
   #main-footer .latest-blog li {
@@ -678,6 +681,8 @@
       background: white; }
     #main-footer .bottom-footer .footer-icons {
       text-align: right; }
+      #main-footer .bottom-footer .footer-icons .fa {
+        transition: all 0.5s ease-out; }
       #main-footer .bottom-footer .footer-icons .fa-facebook {
         color: #3B5998 !important; }
         #main-footer .bottom-footer .footer-icons .fa-facebook:hover {
