@@ -1,0 +1,286 @@
+// top header of the document
+#main-header{
+    position: fixed;
+    width: 100%;   
+    z-index: 22;
+    padding: 0;
+    .navbar-brand{
+        color: $secondary-clr;
+    }
+
+    .navbar-btn{
+        cursor: pointer;
+    }
+
+    .header-address{
+        .h-address-container{
+            margin-right: 40px;
+            .fa{
+                margin-right: 5px;
+                color: $yellow-clr;
+            }
+        }
+
+        .header-icons{
+            .fa{
+                margin:0 8px;
+                font-size: 1.2rem;
+            }
+
+            .fa-facebook{
+                color: #3B5998 !important;
+                &:hover{
+                    color: white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-twitter{
+                color:#1DA1F2 !important;
+                &:hover{
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-instagram{
+                color:#fb3958 !important;
+                &:hover{
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-youtube{ 
+                color: #ff0000 !important;
+                &:hover{
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-linkedin{ 
+                
+                color:#0077b5 !important;
+                &:hover{
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+        }
+    }
+
+
+    // first class of navbar before scrolling
+    &.navbar-first{
+        background: rgba($primary-clr, 0.2);
+        color: $secondary-clr;
+
+        .nav-item{
+            margin: 0 20px;
+            
+            a{
+                color: $secondary-clr;
+                font-size: 1rem;
+                font-weight: 500;
+
+                &:hover{
+                    color: $yellow-clr;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+    }
+
+    // scroll class of navbar scrilling scrolling
+    &.navbar-scroll{
+        background: white;
+        color: $primary-clr;
+        
+
+        .nav-item{
+            margin: 0 20px;
+            
+            a{
+                color: $primary-clr;
+                font-size: 1rem;
+                font-weight: 500;
+
+                &:hover{
+                    color: $yellow-clr;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+    }
+
+
+
+    
+}
+
+
+// navbar menu
+.navbar-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    background: rgba($primary-clr, 0.6);
+    width: 100vw;
+    height:100vh;
+    transform: translate3d(-100%,0,0);
+    @include easeOut(0.5s);
+
+    &.show{
+        transform: translate3d(0,0,0);
+        @include easeOut(0.5s);
+    }
+
+    .navbar-menu-container{
+        position: relative;
+        width: 300px;
+        height: 100%;
+        background: white;
+
+        .navbar-close-btn{
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            color: white;
+
+            &:hover{
+                color: $blue-clr;
+                cursor: pointer;
+            }
+        }
+
+        li{
+            a{
+                padding: 10px;
+                border-bottom: 1px solid gray;
+                display: block;
+                color: $primary-clr;
+                font-weight: 500;
+
+                &:hover{
+                    color: $blue-clr;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .navbar-btn,.navbar-close-btn{
+        font-weight: 300;
+    }
+
+    .search-input{
+        border-radius: 100px
+    }
+
+    .fa{
+        padding: 7px;
+        border-radius: 100px;
+        color: white;
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    .fa-facebook{
+        background: #3B5998 !important;
+        &:hover{
+            background:$primary-clr !important;
+            @include easeOut(0.5s);
+        }
+    }
+    
+    .fa-twitter{
+        background:#1DA1F2 !important;
+        &:hover{
+            background:$primary-clr !important;
+            @include easeOut(0.5s);
+        }
+    }
+    
+    .fa-instagram{
+        background:#fb3958 !important;
+        &:hover{
+            background:$primary-clr !important;
+            @include easeOut(0.5s);
+        }
+    }
+    
+    .fa-youtube{ 
+        background: #ff0000 !important;
+        &:hover{
+            background:$primary-clr !important;
+            @include easeOut(0.5s);
+        }
+    }
+    
+    .fa-linkedin{ 
+        
+        background:#0077b5 !important;
+        &:hover{
+            background:$primary-clr !important;
+            @include easeOut(0.5s);
+        }
+    }
+
+}
+
+.search-btn{
+    cursor: pointer;
+}
+
+
+// search menu
+.search-menu{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba($primary-clr, 0.8);
+    z-index:44;
+    transform: translate3d(100%,0,0);
+    @include easeOut(1s);
+    
+
+    &.show{
+        transform: translate3d(0,0,0);
+        @include easeOut(1s);
+    }
+    
+
+    form{
+        margin-top: 30vh;
+        .search-input{
+            border-radius: 100px 0 0 100px;
+        }
+        .input-group-prepend{
+            border-radius: 0 100px 100px 0;
+
+            button{
+                border-radius: 0 100px 100px 0 !important;
+            }
+        }
+    }
+
+    .search-close-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            color: $blue-clr;
+            @include easeOut(0.5s);
+        }
+    }
+    
+}

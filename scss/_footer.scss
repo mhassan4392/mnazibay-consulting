@@ -1,0 +1,173 @@
+// bottom footer of the document
+#main-footer{
+    position: relative;
+    background: $blue-clr; //url('../images/footer-bg.jpg');
+    background-size: cover;
+    color: white;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/overlay-dotted-pattern.png');
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($blue-clr, 0.6);
+    }
+    
+
+    .footer-list-header{
+        margin-bottom: 20px;
+    }
+    .footer-list{
+        li{
+            list-style-type: none;
+            line-height: 2.2rem;
+
+            a{
+                color: white;
+                font-size: 1.1rem;
+
+                &:hover{
+                    color: $yellow-clr;
+                    padding-left: 10px;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+
+        
+    }
+    .latest-blog{
+        li{
+            margin-bottom: 10px;
+            a{
+                &:hover{
+                    padding-left: none !important;
+                }
+            }
+        }
+    }
+
+
+
+    .bottom-footer{
+        padding: 50px 0;
+        
+
+        a{
+            text-align: center;
+        }
+
+        .fa{
+            padding: 7px;
+            border-radius: 100px;
+            color: white;
+            width: 30px;
+            margin: 0 5px;
+            background: white;
+
+            
+        }
+
+
+
+        .footer-icons{
+            text-align: right;
+            .fa-facebook{
+                color: #3B5998 !important;
+                &:hover{
+                    background:#3B5998 !important;
+                    color: white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-twitter{
+                color:#1DA1F2 !important;
+                &:hover{
+                    background:#1DA1F2 !important;
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-instagram{
+                color:#fb3958 !important;
+                &:hover{
+                    background:#fb3958 !important;
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-youtube{ 
+                color: #ff0000 !important;
+                &:hover{
+                    background:#ff0000 !important;
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+            .fa-linkedin{ 
+                
+                color:#0077b5 !important;
+                &:hover{
+                    background:#0077b5 !important;
+                    color:white !important;
+                    @include easeOut(0.5s);
+                }
+            }
+            
+        }
+    }
+
+}
+
+
+
+
+
+.footer-address{
+    padding: 100px 0;
+    color: #eee;
+    background: url('../images/newLetter-bg.jpg') no-repeat center;
+    background-size: cover;
+
+    .address-col{
+        padding: 0 40px;
+        font-size: 0.9rem;
+
+        &:nth-child(2n){
+            // border-left: 1px solid #eee;
+            // border-right: 1px solid #eee;
+
+        }
+        h4{
+            margin-bottom: 20px;
+            text-align: center
+        }
+       li{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+       }
+    }
+    
+    .fa{
+        color: $yellow-clr;
+        font-size: 1.4rem;
+        margin-right: 20px;
+    }
+}

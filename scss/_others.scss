@@ -1,0 +1,494 @@
+
+#features{
+    padding: 60px 0;
+    color: $primary-clr;
+
+    .slash{
+        background: $yellow-clr;
+        height: 3px;
+    }
+
+    // background: url(../images/features-bg.jpeg) no-repeat center center;
+    // background: $blue-clr;
+    // background-size: cover;
+
+    .feature-col{
+        color: $primary-clr;
+    }
+
+    .card{
+        border: none;
+        cursor: pointer;
+        &:hover{
+            h4{
+                color: $blue-clr;
+                @include easeOut(0.5s);
+            }   
+        }
+    }
+}
+
+
+
+// newsletter section
+#newsLetter{
+    position: relative;
+    color: $secondary-clr;
+    padding: 100px 0;
+    background-image: url('../images/newLetter-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .newsletter-img-1,.newsletter-img-2{
+        position: absolute;
+    }
+    .newsletter-img-1{
+        top: 30%;
+        left: 0;
+    }
+    .newsletter-img-2{
+        top: 30%;
+        right: 0;
+    }
+
+    .subscribe-input{
+        border-radius: 100px 0 0 100px;
+        background-image: url('../images/email-logo.png');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 40px;
+        padding-left: 70px;
+        background-position-x: 3%;
+    }
+
+    button{
+        border-radius: 0 100px 100px 0;
+    }
+}
+
+#plans{
+    padding: 100px 0;
+
+    .slash{
+        background: $red-clr;
+    }
+
+    .number{
+        border: 7px solid $blue-clr;
+        width: 120px;
+        padding: 0;
+        text-indent: 40px;
+        font-size: 5rem;
+        margin-right: 40px;
+        color: $red-clr;
+        font-weight: bold;
+           
+    }
+    .text{
+        width: 100px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+//aboutus section
+#aboutus{
+    color: white;
+    h1{
+        width: 80%;
+        margin: auto;
+    }
+    .slash{
+        background: $yellow-clr;
+        height: 2px;
+    }
+
+    .aboutus-col-1{
+        background: url('../images/aboutus-bg.jpg') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+
+        .nav-item{
+            background: $blue-clr;
+            border: none;
+            margin: 0 10px;
+            border-radius: 5px 5px 0 0;
+            padding: 0;
+            
+            width: 250px;
+            .nav-link{
+                color: white;
+                margin: 0;
+                border: none;
+                // padding-bottom: 0;
+                padding: 15px 0;
+                
+                h4{
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    color: white;
+                }
+
+                &.active{
+                    color: $blue-clr;
+                    border: none;
+                    background: $yellow-clr;
+                }
+            }
+        }
+
+        .aboutus-col-1-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: url('../images/overlay-dotted-pattern.png');
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($blue-clr, 0.1);
+        }
+    }
+
+    .aboutus-col-2{
+        color: $primary-clr;
+    }
+}
+
+
+// services section
+#services{
+    padding: 100px 0;
+
+    h5{
+        padding: 10px 0;
+        color: $blue-clr;
+    }
+
+    .card-image{
+        position: relative;
+        .image-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary-clr, 0.5);
+            display: none;
+        }
+    }
+
+    .card{
+        border: none;
+        img{
+            cursor: pointer;
+        }
+        &:hover{
+            background: $blue-clr;
+            color: white;
+            @include easeOut(0.5s);
+
+            .image-overlay{
+                cursor: pointer;
+                display: block;
+                @include easeOut(0.5s);
+                .fa{
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 100;
+                    position: absolute;
+                    top: 45%;
+                    left: 45%;
+                }
+            }
+
+            h5{
+                color: white;
+            }
+            a{
+                color: white;
+            }
+        }
+
+        a{
+            color: $blue-clr;
+            .fa{
+                color: $yellow-clr;
+            }
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// companies section
+#companies{
+    padding: 100px 0;
+    background: $light-clr;
+
+    .company-col{
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            background: white;
+            color: $blue-clr;
+            cursor: pointer;
+            @include easeOut(0.5s);
+        }
+    }
+}
+
+// experience section
+#experience{
+    padding: 20px 0;
+    position: relative;
+    background: url('../images/final-promo-bg.jpg') no-repeat center center;
+    // background: url('../images/overlay-dotted-pattern.png');
+    background-size: cover;
+    height: 350px;
+
+    
+    .experience-inner{
+        background: url('../images/overlay-dotted-pattern.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .experience-col{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba($blue-clr, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .count-col{
+                color: white;
+                .count{
+                    font-size: 3.5rem;
+                    color: $yellow-clr;
+                }
+                span{
+                    font-size: 3.5rem;
+                    color: $yellow-clr;
+                    display: inline;
+                }
+            }
+
+            .slash{
+                background: $yellow-clr;
+            }
+
+            h1{
+                font-size: 3rem;
+            }
+
+            h4{
+                font-size: 2rem;
+                color: white;
+
+                &.yellow-clr{
+                    color: $yellow-clr;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+// entrepreneurs section
+#entrepreneurs{
+    position: relative;
+    background: url('../images/final-promo-bg.jpg') no-repeat center center;
+    // background: url('../images/overlay-dotted-pattern.png');
+    background-size: cover;
+    height: 250px;
+
+    
+    .entrepreneurs-inner{
+        background: url('../images/overlay-dotted-pattern.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .entrepreneurs-col{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba($blue-clr, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .slash{
+                background: $yellow-clr;
+            }
+
+            h4{
+                font-size: 2rem;
+                color: white;
+
+                &.yellow-clr{
+                    color: $yellow-clr;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// testimonial section
+#testimonial{
+    padding: 100px 0;
+    background: $light-clr;
+    color: $primary-clr;
+
+    .testimonial-container{
+        text-align: center;
+
+        .testimonial-img{
+            width: 100px;
+            margin: auto;
+    
+            img{
+                border-radius: 50%;
+            }
+        }
+        .testimonial-comment{
+            text-align: center;
+            padding: 20px 0;
+            width: 80%;
+            margin: auto;
+            height: 200px;
+            line-height: 1.8rem;
+        }
+        .testimonial-bio{
+            text-align: center;
+            padding: 20px 0;
+        }
+    
+    
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+
+// latest news section
+#latest-news{
+    padding: 100px 0;
+
+    h5{
+        a{
+            color: $primary-clr;
+            &:hover{
+                color: $blue-clr;
+                text-decoration: none;
+                @include easeOut(0.5s);
+            }
+        }
+    }
+    .card{
+        border-bottom: 2px solid $primary-clr;
+        overflow: hidden;
+        .card-img-top{
+            overflow: hidden;
+        }
+
+        &:hover{
+            border-bottom: 2px solid $blue-clr;
+            @include easeOut(0.5s);
+
+            img{
+                transform: scale(1.1);
+                @include easeOut(0.5s);
+            }
+        }
+    }
+}
+
+
+
+// projects section
+#projects{
+    padding: 100px 0;
+
+    h5{
+        a{
+            color: $primary-clr;
+            &:hover{
+                color: $blue-clr;
+                text-decoration: none;
+                @include easeOut(0.5s);
+            }
+        }
+    }
+    .card{
+        border-bottom: 2px solid $primary-clr;
+        overflow: hidden;
+        .card-img-top{
+            overflow: hidden;
+        }
+
+        &:hover{
+            border-bottom: 2px solid $blue-clr;
+            @include easeOut(0.5s);
+
+            img{
+                transform: scale(1.1);
+                @include easeOut(0.5s);
+            }
+        }
+    }
+}
+
+#contact{
+
+    #contact-form{
+        padding: 80px 0;
+        background: #222222;
+        color: white;
+    }
+
+    #map{
+        width: 100vw;
+        height: 500px;
+    }
+}

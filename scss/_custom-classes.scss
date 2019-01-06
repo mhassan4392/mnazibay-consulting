@@ -1,0 +1,61 @@
+
+// bg classes
+.bg-blue{
+    background: $blue-clr;
+}
+
+.bg-yellow{
+    background: $yellow-clr;
+}
+
+.bg-red{
+    background: $red-clr;
+}
+
+// text classes
+.text-blue{
+    color: $blue-clr;
+}
+
+.text-yellow{
+    color: $yellow-clr;
+}
+
+.text-red{
+    color: $red-clr;
+}
+// btn classes
+.btn-blue{
+    background: $blue-clr;
+    border: none;
+    color: white;
+    &:hover{
+        color: $blue-clr;
+        background: #eee;
+        @include easeOut(0.5s);
+    }
+}
+
+.btn-yellow{
+    background: $yellow-clr;
+    border: none;
+    color: $blue-clr;
+
+    &:hover{
+        background: $blue-clr;
+        color: white;
+        @include easeOut(0.5s);
+    }
+}
+
+.btn-red{
+    background: $red-clr;
+    border: none;
+    color: white;
+
+    &:hover{
+        background: #eee;
+        color: $blue-clr;
+        @include easeOut(0.5s);
+    }
+}

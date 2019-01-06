@@ -1,0 +1,81 @@
+
+// medium size
+@include mediaMd{
+    
+    // aboutus section
+    #aboutus{
+        h1{
+            width: 80%;
+            margin: auto;
+            font-size: 1.8rem;
+        }
+        .aboutus-col-1{
+            .nav-item{
+                width: 150px;
+               .nav-link{
+                h4{
+                    font-size: 1.2rem;
+                }
+               }
+            }
+        }
+    }
+
+
+    .address-col{
+        margin: 20px 0;
+        &:nth-child(2n){
+            // border-top: 1px solid #eee;
+            // border-bottom: 1px solid #eee;
+        }
+    }
+}
+
+// small size
+@include mediaSm{
+    // aboutus section
+    #aboutus{
+        .aboutus-col-1{
+            .nav-item{
+                width: 110px;
+               .nav-link{
+                h4{
+                    font-size: 1rem;
+                }
+               }
+            }
+        }
+    }
+
+    // experience section
+    #experience{
+        h1{
+            font-size: 2rem !important;
+        }
+
+        .count-col{
+            .count{
+                font-size: 2.6rem !important;
+            }
+        }
+    }
+
+    
+}
+
+// large size
+@include mediaLg{
+
+
+    .address-col{
+        margin-bottom: 20px;
+        &:nth-child(2n){
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+    }
+}
+
+// extra large size
+@include mediaXl{
+}
