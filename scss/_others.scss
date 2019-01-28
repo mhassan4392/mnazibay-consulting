@@ -67,6 +67,9 @@
     }
 }
 
+
+// plans section
+
 #plans{
     padding: 100px 0;
 
@@ -236,6 +239,74 @@
     }
 }
 
+
+// Projects section
+#projects{
+    padding: 100px 0;
+
+    h5{
+        padding: 10px 0;
+        color: $blue-clr;
+    }
+
+    .card-image{
+        position: relative;
+        .image-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary-clr, 0.5);
+            display: none;
+        }
+    }
+
+    .card{
+        border: none;
+        img{
+            cursor: pointer;
+        }
+        &:hover{
+            background: $blue-clr;
+            color: white;
+            @include easeOut(0.5s);
+
+            .image-overlay{
+                cursor: pointer;
+                display: block;
+                @include easeOut(0.5s);
+                .fa{
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 100;
+                    position: absolute;
+                    top: 45%;
+                    left: 45%;
+                }
+            }
+
+            h5{
+                color: white;
+            }
+            a{
+                color: white;
+            }
+        }
+
+        a{
+            color: $blue-clr;
+            .fa{
+                color: $yellow-clr;
+            }
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 // companies section
 #companies{
     padding: 100px 0;
@@ -247,15 +318,106 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
 
         &:hover{
-            background: white;
-            color: $blue-clr;
+            background: $blue-clr;
+            color: white;
             cursor: pointer;
             @include easeOut(0.5s);
         }
     }
 }
+
+// Strength section
+#strength{
+    padding: 70px 0;
+    background: $light-clr;
+
+    .strength-col{
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &:hover{
+            background: $blue-clr;
+            color: white;
+            cursor: pointer;
+            @include easeOut(0.5s);
+        }
+    }
+}
+
+// Represent section
+#represent{
+    padding: 70px 0;
+    background: $light-clr;
+
+    .represent-col{
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &:hover{
+            background: $blue-clr;
+            color: white;
+            cursor: pointer;
+            @include easeOut(0.5s);
+        }
+    }
+}
+
+// Partner section
+#partners{
+    padding: 70px 0;
+    background: white;
+
+    .partners-col{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        img{
+            width: 200px;
+        }
+    }
+}
+
+// Customers section
+#customers{
+    padding: 50px 0;
+    background: white;
+
+    
+
+    .customers-col{
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &:hover{
+            background: $blue-clr;
+            color: white;
+            cursor: pointer;
+            @include easeOut(0.5s);
+        }
+    }
+}
+
+
+
+
 
 // experience section
 #experience{
@@ -410,74 +572,7 @@
 }
 
 
-
-// latest news section
-#latest-news{
-    padding: 100px 0;
-
-    h5{
-        a{
-            color: $primary-clr;
-            &:hover{
-                color: $blue-clr;
-                text-decoration: none;
-                @include easeOut(0.5s);
-            }
-        }
-    }
-    .card{
-        border-bottom: 2px solid $primary-clr;
-        overflow: hidden;
-        .card-img-top{
-            overflow: hidden;
-        }
-
-        &:hover{
-            border-bottom: 2px solid $blue-clr;
-            @include easeOut(0.5s);
-
-            img{
-                transform: scale(1.1);
-                @include easeOut(0.5s);
-            }
-        }
-    }
-}
-
-
-
-// projects section
-#projects{
-    padding: 100px 0;
-
-    h5{
-        a{
-            color: $primary-clr;
-            &:hover{
-                color: $blue-clr;
-                text-decoration: none;
-                @include easeOut(0.5s);
-            }
-        }
-    }
-    .card{
-        border-bottom: 2px solid $primary-clr;
-        overflow: hidden;
-        .card-img-top{
-            overflow: hidden;
-        }
-
-        &:hover{
-            border-bottom: 2px solid $blue-clr;
-            @include easeOut(0.5s);
-
-            img{
-                transform: scale(1.1);
-                @include easeOut(0.5s);
-            }
-        }
-    }
-}
+// contact section
 
 #contact{
 
@@ -485,10 +580,182 @@
         padding: 80px 0;
         background: #222222;
         color: white;
+
+        .contact-address{
+            li{
+                list-style-type: none;
+                line-height: 30px;
+    
+                &:hover{
+                    .fa{
+                        color: $yellow-clr;
+                        @include easeOut(0.5s);
+                    }
+                }
+    
+                .fa{
+                    font-size: 1.2rem;
+                    @include easeOut(0.5s);
+                    width: 20px;
+                }
+            }
+        }
     }
 
     #map{
         width: 100vw;
         height: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+// pages section
+
+// about page
+#about-page{
+    padding: 120px 0 60px 0;
+    background: $light-clr;
+}
+
+
+// services page
+.services-page{
+    .card-header{
+        background: $blue-clr;
+        color: white;
+        text-align: center;
+    }
+
+    .sidebar-icons{
+        .fa{
+            margin: 0 7px;
+        }
+        .fa-facebook{
+            color: #3B5998 !important;
+            &:hover{
+                
+                color: $blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-twitter{
+            color:#1DA1F2 !important;
+            &:hover{
+                color: $blue-clr !important;
+                
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-instagram{
+            color:#fb3958 !important;
+            &:hover{
+                color:$blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-youtube{ 
+            color: #ff0000 !important;
+            &:hover{
+                color:$blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
+    }
+}
+
+// about page
+#page-section{
+    padding: 120px 0 60px 0;
+    background: $light-clr;
+    position: relative;
+    background: url('../images/final-promo-bg.jpg') no-repeat center center;
+    // background: url('../images/overlay-dotted-pattern.png');
+    background-size: cover;
+    color: white;
+
+    .page-overlay{
+        background: url('../images/overlay-dotted-pattern.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-dotted-overlay{
+        background: rgba($blue-clr, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// projects page
+.projects-page{
+    .card-header{
+        background: $blue-clr;
+        color: white;
+        text-align: center;
+    }
+
+    li{
+        margin-left: 50px;
+        // padding-left: 25px;
+        // list-style-type: none;
+        // background-image: url('../images/check.png');
+        // background-repeat: no-repeat;
+        // background-size: 20px;
+        // background-position: top left;
+    }
+
+    .sidebar-icons{
+        .fa{
+            margin: 0 7px;
+        }
+        .fa-facebook{
+            color: #3B5998 !important;
+            &:hover{
+                
+                color: $blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-twitter{
+            color:#1DA1F2 !important;
+            &:hover{
+                color: $blue-clr !important;
+                
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-instagram{
+            color:#fb3958 !important;
+            &:hover{
+                color:$blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
+        
+        .fa-youtube{ 
+            color: #ff0000 !important;
+            &:hover{
+                color:$blue-clr !important;
+                @include easeOut(0.5s);
+            }
+        }
     }
 }

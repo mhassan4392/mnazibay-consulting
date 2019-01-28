@@ -4,6 +4,7 @@
     width: 100%;   
     z-index: 22;
     padding: 0;
+    top: 0;
     .navbar-brand{
         color: $secondary-clr;
     }
@@ -137,6 +138,12 @@
     height:100vh;
     transform: translate3d(-100%,0,0);
     @include easeOut(0.5s);
+
+    .navbar-menu-logo img{
+        width: 250px;
+        padding: 10px;
+    }
+
 
     &.show{
         transform: translate3d(0,0,0);

@@ -29,6 +29,13 @@
             // border-bottom: 1px solid #eee;
         }
     }
+
+    .customers-grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 1fr;
+    }
 }
 
 // small size
@@ -70,6 +77,13 @@
         }
     }
 
+    .customers-grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1fr;
+    }
+
     
 }
 
@@ -83,6 +97,13 @@
             border-left: 1px solid #eee;
             border-right: 1px solid #eee;
         }
+    }
+
+    .customers-grid{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 1fr;
     }
 }
 
