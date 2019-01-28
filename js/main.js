@@ -1,17 +1,22 @@
 // navbar function
 
-window.onscroll = function() {scrollFunction()};
+const frontNavbar = document.querySelector('.front-page-header');
+
+if(frontNavbar){
+  window.onscroll = function() {scrollFunction()};
+
+}
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("main-header").classList.add('navbar-scroll');
-    document.getElementById("main-header").classList.remove('navbar-first');
+    document.querySelector(".front-page-header").classList.add('navbar-scroll');
+    document.querySelector(".front-page-header").classList.remove('navbar-first');
     document.querySelector('.brand-img').setAttribute('src','images/logo1.png');
     document.getElementById("myBtn").style.display = "block";
     //document.querySelector('.header-address').classList.add('d-none');
   } else {
-    document.getElementById("main-header").classList.remove('navbar-scroll');
-    document.getElementById("main-header").classList.add('navbar-first');
+    document.querySelector(".front-page-header").classList.remove('navbar-scroll');
+    document.querySelector(".front-page-header").classList.add('navbar-first');
     document.querySelector('.brand-img').setAttribute('src','images/logo-transparent-header1.png');
     document.getElementById("myBtn").style.display = "none";
     //document.querySelector('.header-address').classList.remove('d-none');
@@ -90,11 +95,17 @@ function reset() {
 // Init slider
 function startSlide() {
   reset();
-  sliderImages[0].style.display = "block";
+  if(sliderImages[0]){
+    sliderImages[0].style.display = "block";
+  }
 }
 
-arrowLeft.addEventListener('click', slideLeft);
-arrowRight.addEventListener('click', slideRight);
+if(arrowLeft){
+  arrowLeft.addEventListener('click', slideLeft);
+}
+if(arrowRight){
+  arrowRight.addEventListener('click', slideRight);
+}
 
 // Show prev
 function slideLeft() {
@@ -115,7 +126,9 @@ function slideRight() {
   if(current == sliderImages.length){
     current = 0;
   }
-  sliderImages[current].style.display = "block";
+  if(sliderImages[current]){
+    sliderImages[current].style.display = "block";
+  }
 
   
 }
@@ -131,22 +144,6 @@ startSlide();
 setInterval(slides, 15000);
 
 }
-
-// function for btn in pricing section
-
-$('.yearly-plans').hide();
-$('.yearly-btn').click(function(){
-    $('.yearly-plans').fadeIn(1500);
-    $('.monthly-plans').hide();
-    $('.monthly-btn').removeClass('active');
-    $('.yearly-btn').addClass('active');
-});
-$('.monthly-btn').click(function(){
-    $('.monthly-plans').fadeIn(1500);
-    $('.yearly-plans').hide();
-    $('.yearly-btn').removeClass('active');
-    $('.monthly-btn').addClass('active');
-});
 
 
 let aboutShow = document.querySelector('.about-show');
