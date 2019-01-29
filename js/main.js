@@ -258,12 +258,53 @@ var swiper = new Swiper('.swiper-container', {
     distance:'300px',
   });
 
-  sr.reveal('.customer-img',{
+  sr.reveal('.customer-img-1',{
     duration:3000,
     origin:'bottom',
     distance:'300px',
   });
 
+  sr.reveal('.customer-img-2',{
+    delay:1000,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img-3',{
+    delay:1500,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img-4',{
+    delay:2000,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img-5',{
+    delay:2500,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img-6',{
+    delay:3000,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img-7',{
+    delay:3500,
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
 
 
 
