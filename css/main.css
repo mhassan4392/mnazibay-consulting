@@ -103,6 +103,7 @@
   #main-header.navbar-scroll {
     background: white;
     color: #192225;
+    border-bottom: 1px solid rgba(25, 34, 37, 0.5);
     transition: all 0.5s ease-out; }
     #main-header.navbar-scroll .nav-item {
       margin: 0 20px; }
@@ -720,33 +721,6 @@
   color: white;
   text-align: center; }
 
-.services-page .sidebar-icons .fa {
-  margin: 0 7px; }
-
-.services-page .sidebar-icons .fa-facebook {
-  color: #3B5998 !important; }
-  .services-page .sidebar-icons .fa-facebook:hover {
-    color: #002e5b !important;
-    transition: all 0.5s ease-out; }
-
-.services-page .sidebar-icons .fa-twitter {
-  color: #1DA1F2 !important; }
-  .services-page .sidebar-icons .fa-twitter:hover {
-    color: #002e5b !important;
-    transition: all 0.5s ease-out; }
-
-.services-page .sidebar-icons .fa-instagram {
-  color: #fb3958 !important; }
-  .services-page .sidebar-icons .fa-instagram:hover {
-    color: #002e5b !important;
-    transition: all 0.5s ease-out; }
-
-.services-page .sidebar-icons .fa-youtube {
-  color: #ff0000 !important; }
-  .services-page .sidebar-icons .fa-youtube:hover {
-    color: #002e5b !important;
-    transition: all 0.5s ease-out; }
-
 #page-section {
   padding: 120px 0 60px 0;
   background: #f5f5f5;
@@ -777,32 +751,49 @@
 .projects-page li {
   margin-left: 50px; }
 
-.projects-page .sidebar-icons .fa {
-  margin: 0 7px; }
+.sidebar .sidebar-icons .fa {
+  margin: 0 7px;
+  font-size: 1.8rem;
+  transition: all 0.5s ease-out; }
 
-.projects-page .sidebar-icons .fa-facebook {
+.sidebar .sidebar-icons .fa-facebook {
   color: #3B5998 !important; }
-  .projects-page .sidebar-icons .fa-facebook:hover {
+  .sidebar .sidebar-icons .fa-facebook:hover {
     color: #002e5b !important;
     transition: all 0.5s ease-out; }
 
-.projects-page .sidebar-icons .fa-twitter {
+.sidebar .sidebar-icons .fa-twitter {
   color: #1DA1F2 !important; }
-  .projects-page .sidebar-icons .fa-twitter:hover {
+  .sidebar .sidebar-icons .fa-twitter:hover {
     color: #002e5b !important;
     transition: all 0.5s ease-out; }
 
-.projects-page .sidebar-icons .fa-instagram {
+.sidebar .sidebar-icons .fa-instagram {
   color: #fb3958 !important; }
-  .projects-page .sidebar-icons .fa-instagram:hover {
+  .sidebar .sidebar-icons .fa-instagram:hover {
     color: #002e5b !important;
     transition: all 0.5s ease-out; }
 
-.projects-page .sidebar-icons .fa-youtube {
+.sidebar .sidebar-icons .fa-youtube {
   color: #ff0000 !important; }
-  .projects-page .sidebar-icons .fa-youtube:hover {
+  .sidebar .sidebar-icons .fa-youtube:hover {
     color: #002e5b !important;
     transition: all 0.5s ease-out; }
+
+.sidebar li {
+  list-style-type: none;
+  margin: 10px 0; }
+  .sidebar li a {
+    color: #192225;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.5s ease-out; }
+    .sidebar li a:hover {
+      color: #002e5b;
+      text-decoration: none;
+      padding-left: 10px;
+      transition: all 0.5s ease-out; }
 
 #main-footer {
   position: relative;
