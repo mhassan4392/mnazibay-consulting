@@ -205,103 +205,96 @@ var swiper = new Swiper('.swiper-container', {
   window.sr = ScrollReveal();
 
   sr.reveal('.newsletter-img-1',{
-    duration:3000,
+    duration:2000,
     origin:'top',
     distance:'300px',
   });
 
   sr.reveal('.newsletter-img-2',{
-    duration:3000,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.plans-img',{
-    duration:3000,
+    duration:2000,
     origin:'left',
     distance:'300px',
   });
 
   sr.reveal('.company-col',{
-    duration:3000,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.strength-col',{
-    duration:3000,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
-  sr.reveal('.partner-1',{
-    duration:3000,
-    origin:'left',
-    distance:'300px',
-  });
-
-  sr.reveal('.partner-2',{
-    duration:3000,
-    origin:'right',
-    distance:'300px',
+  sr.reveal('.partners-col',{
+    duration:2000,
+    origin:'bottom',
   });
 
   sr.reveal('.represent-1',{
-    duration:3000,
+    duration:2000,
     origin:'left',
     distance:'300px',
   });
 
   sr.reveal('.represent-2',{
-    duration:3000,
+    duration:2000,
     origin:'right',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-1',{
-    duration:3000,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-2',{
-    delay:1000,
-    duration:3000,
+    delay:300,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-3',{
-    delay:1500,
-    duration:3000,
+    delay:600,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-4',{
-    delay:2000,
-    duration:3000,
+    delay:900,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-5',{
-    delay:2500,
-    duration:3000,
+    delay:1200,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-6',{
-    delay:3000,
-    duration:3000,
+    delay:1500,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
 
   sr.reveal('.customer-img-7',{
-    delay:3500,
-    duration:3000,
+    delay:1800,
+    duration:2000,
     origin:'bottom',
     distance:'300px',
   });
