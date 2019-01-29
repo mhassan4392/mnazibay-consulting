@@ -222,6 +222,48 @@ var swiper = new Swiper('.swiper-container', {
     distance:'300px',
   });
 
+  sr.reveal('.company-col',{
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.strength-col',{
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.partner-1',{
+    duration:3000,
+    origin:'left',
+    distance:'300px',
+  });
+
+  sr.reveal('.partner-2',{
+    duration:3000,
+    origin:'right',
+    distance:'300px',
+  });
+
+  sr.reveal('.represent-1',{
+    duration:3000,
+    origin:'left',
+    distance:'300px',
+  });
+
+  sr.reveal('.represent-2',{
+    duration:3000,
+    origin:'right',
+    distance:'300px',
+  });
+
+  sr.reveal('.customer-img',{
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
 
 
 
